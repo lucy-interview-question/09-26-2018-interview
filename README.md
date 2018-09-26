@@ -45,6 +45,7 @@ When an engineer makes a commit changing the cluster's configuration files, GitL
 By using a feature in a tool already being utilized, we save time that would have been spent on another tool. While more complete solutions like WeaveWorks Flux or Amazon EKS could work, they add extra legs to the DevOps pipeline. GitLab's Kubernetes integration should have all the functionality necessary for this situation.
 
 ## References
+* GitLab - GitLab + Kubernetes https://about.gitlab.com/kubernetes/
 * Weaveworks - The GitOps Pipeline https://www.weave.works/blog/the-gitops-pipeline
 * Weaveworks - Flux Github Readme https://github.com/weaveworks/flux
 * Edenmal - Gitlab + Kubernetes: Using GitLab's CI Kubernetes Cluster feature https://edenmal.moe/post/2018/GitLab-Kubernetes-Using-GitLab-CIs-Kubernetes-Cluster-feature/

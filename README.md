@@ -2,16 +2,16 @@
 > Written by Lucy Nunley 
 
 ## Abstract
-With the DevOps industry having adapted the 'infrastructure-as-code' mentality, GitHub has become the source of truth for the code. In order to ensure continuous integration and delivery, it is necessary to sufficiently automate its deployment. Inevitably many engineers will write their own tools for achieving this. The practical engineer will adapt these tools to her own use. This document details the implementation of an off-the-shelf solution for this type of automation for Kubernetes.
+With the DevOps industry having adapted the 'infrastructure-as-code' mentality, Git has become the source of truth for the code. In order to ensure continuous integration and delivery, it is necessary to sufficiently automate its deployment. Inevitably many engineers will write their own tools for achieving this. The practical engineer will adapt these tools to her own use. This document details the implementation of an off-the-shelf solution for this type of automation for Kubernetes.
 
 ## Problem Statement
 
 > Kubernetes is managed through YAML or JSON files that help describe the state of the environment. These YAML files are numerous and sometimes very complex. We need a system to help manage these YAML files and use them to deploy the latest code to all of our environments.
 
 ### Objectives
-* Maintainability and extendibility are priorities
+* Maintainability and extendibility
 * Addressing the difficulty of adding new environments dynamically
-* Easily Foldable into existing CI/CD pipelines
+* Easily pluggable into existing CI/CD pipelines
 * Support a dynamic multi-environment setup
 * Gitlab integration preferred
 

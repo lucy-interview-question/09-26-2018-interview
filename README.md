@@ -26,12 +26,13 @@ The following are solutions which could work but were not chosen:
     * We don't necessarily need a new cloud host
 3. Weaveworks Flux
     * Weaveworks products tend to try to draw you into their costly ecosystem
+    * Requires working a Flux node into each cluster
 
 ## Proposal
 
-Our solution is to use Gitlab CI's Kubernetes Clutter feature. Since this is built into Gitlab, there is no need for us to use 3rd party software. As GitLab says on their website, "having it all in one place simplifies toolchain complexity and speeds up cycle times".
+Our solution is to use Gitlab CI's Kubernetes cluster feature. Since this is built into GitLab, there is no need for us to use 3rd party software. As GitLab says on their website, "having it all in one place simplifies toolchain complexity and speeds up cycle times".
 
-Implementing this solution is simple, and should come with no downtime. Edenmal details this in his guide referenced below. Essentially, the existing cluster will be added to GitLab's integration, a `.gitlab-ci.yml` pipeline config file has to be created, and the manifest has to be added to the repository being pointed to.
+Implementing this solution is simple, and should come with no downtime. Edenmal details this in his guide referenced below. Essentially, the existing cluster will be added to GitLab's integration, a `.gitlab-ci.yml` pipeline config file has to be created, and the manifest has to be added to the repository being pointed to. The creation of the GitLab CI file is where the bulk of the work for this solution is. Only having one file to maintain is a perk however. 
 
 Other benefits of this solution:
 * Easily supports a dynamic multi-cluster environment
